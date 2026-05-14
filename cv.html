@@ -65,18 +65,12 @@
     }
 
     .profile-photo {
-      width: 140px;
-      aspect-ratio: 1;
-      border-radius: 50%;
+      width: 150px;
+      height: 200px;
+      border-radius: 8px;
       border: 3px solid var(--line);
-      background: linear-gradient(135deg, #dbeafe, #eff6ff);
-      color: var(--muted);
-      display: grid;
-      place-items: center;
-      text-align: center;
-      font-size: 0.9rem;
-      font-weight: 600;
-      padding: 1rem;
+      object-fit: cover;
+      display: block;
     }
 
     .cv-grid {
@@ -123,7 +117,7 @@
     @media (max-width: 760px) {
       .header-cv,
       .cv-grid { grid-template-columns: 1fr; }
-      .profile-photo { width: 110px; }
+      .profile-photo { width: 120px; height: 160px; }
     }
   </style>
 </head>
@@ -137,7 +131,7 @@
           <h1>Currículum Vitae</h1>
           <p>Pablo Guerra Oliva</p>
         </div>
-        <div class="profile-photo" aria-label="Espacio para foto de perfil">Foto de Perfil</div>
+        <img src="foto-cv.png" alt="Captura de pantalla 2026-05-14 105921.png" class="profile-photo">
       </div>
 
       <div class="cv-grid">
