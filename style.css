@@ -210,8 +210,36 @@ section { padding: 2rem 1.8rem; }
 .contact-item {
   border: 1px solid var(--line);
   border-radius: 10px;
-  padding: 1rem;
+  padding: 1.3rem 1rem;
   background: #fff;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 0.55rem;
+  min-height: 155px;
+}
+
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.contact-item h3,
+.contact-item p {
+  margin: 0;
+}
+
+.contact-item h3 {
+  color: #111827;
+  font-size: 1.65rem;
+  line-height: 1;
+}
+
+.contact-item p {
+  color: #111827;
+  font-size: 1.1rem;
 }
 
 @media (max-width: 860px) {
