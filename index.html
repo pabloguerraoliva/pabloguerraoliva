@@ -3,13 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inicio · Pablo Guerra Oliva</title>
-  <meta http-equiv="refresh" content="0; url=cv.html#inicio" />
-  <script>
-    window.location.replace("cv.html#inicio");
-  </script>
+  <title>Bienvenida · Pablo Guerra Oliva</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <p>Redirigiendo al CV… <a href="cv.html#inicio">Haz clic aquí si no se redirige automáticamente</a>.</p>
+  <div class="container welcome-card">
+    <nav>
+      <strong>Pablo Guerra Oliva</strong>
+      <div class="nav-links">
+        <a class="nav-btn active" href="index.html">Bienvenida</a>
+        <a class="nav-btn" href="cv.html">CV</a>
+        <a class="nav-btn" href="contacto.html">Contacto</a>
+      </div>
+    </nav>
+
+    <section class="welcome-content">
+      <p class="tag">Currículum Vitae</p>
+      <h1 class="section-title">Bienvenida</h1>
+      <hr class="section-divider" />
+      <p>Hola, soy Pablo Guerra Oliva. Te doy la bienvenida a mi espacio profesional.</p>
+      <p>Aquí podrás consultar mi perfil, experiencia y datos de contacto de forma clara y organizada.</p>
+      <a class="cta-btn" href="cv.html">Ver CV</a>
+    </section>
+  </div>
 </body>
 </html>
