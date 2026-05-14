@@ -6,12 +6,15 @@
   <title>Inicio y CV · Pablo Guerra Oliva</title>
   <style>
     :root {
-      --bg: #f6f3ef;
+      --bg: #f2f4f8;
       --surface: #ffffff;
-      --text: #1c1c1c;
-      --line: #d8d1c8;
-      --accent: #463a2a;
-      --max-width: 900px;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --max-width: 980px;
+      --section-gap: 5rem;
     }
 
     * { box-sizing: border-box; }
@@ -20,7 +23,7 @@
 
     body {
       margin: 0;
-      font-family: "Times New Roman", Times, serif;
+      font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
@@ -31,54 +34,146 @@
       margin: 2rem auto;
       background: var(--surface);
       border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
     }
 
     nav {
       position: sticky;
       top: 0;
-      background: #fdfcf9;
+      background: #ffffffee;
+      backdrop-filter: blur(6px);
       border-bottom: 1px solid var(--line);
       padding: 1rem 1.5rem;
       display: flex;
-      gap: 1rem;
+      gap: 0.75rem;
+      z-index: 10;
     }
 
     nav a {
       text-decoration: none;
-      color: var(--accent);
-      border: 1px solid var(--line);
-      padding: 0.35rem 0.75rem;
+      color: #fff;
+      background: var(--accent);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+      background: var(--accent-hover);
+      transform: translateY(-1px);
+      outline: none;
     }
 
     section {
-      padding: 2rem 1.5rem;
-      border-bottom: 1px solid var(--line);
+      padding: 2.25rem 1.5rem;
     }
 
-    h1, h2 { margin-top: 0; }
+    #inicio {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: var(--section-gap);
+    }
+
+    #cv {
+      padding-top: var(--section-gap);
+    }
+
+    h1, h2, h3 { margin-top: 0; }
+
+    .intro-wrap {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1.5rem;
+      align-items: center;
+    }
 
     #inicio h1 {
       font-size: clamp(2.4rem, 6vw, 3.8rem);
       margin-bottom: 0.5rem;
     }
 
-    .cv-grid {
+    .profile-photo {
+      width: 140px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      border: 3px solid var(--line);
+      background: linear-gradient(135deg, #dbeafe, #eff6ff);
+      color: var(--muted);
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.8rem 1.2rem;
+      place-items: center;
+      text-align: center;
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 1rem;
     }
 
-    .label {
-      font-weight: bold;
+    .cv-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .cv-card {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1rem;
+      background: #f9fafb;
+    }
+
+    .cv-card .label {
+      display: block;
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.35rem;
+    }
+
+    .skills {
+      margin-top: 1.8rem;
+    }
+
+    .skill-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 0.8rem;
+    }
+
+    .pill {
+      background: #e0ecff;
+      color: #1e3a8a;
+      border: 1px solid #bfdbfe;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 600;
     }
 
     footer {
-      padding: 1rem 1.5rem;
-      font-size: 0.95rem;
+      border-top: 1px solid var(--line);
+      padding: 1rem 1.5rem 1.25rem;
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--muted);
     }
 
-    @media (max-width: 700px) {
-      .cv-grid { grid-template-columns: 1fr; }
+    @media (max-width: 760px) {
+      .intro-wrap {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-photo {
+        width: 110px;
+      }
+
+      .cv-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -90,19 +185,54 @@
     </nav>
 
     <section id="inicio">
-      <h1>Bienvenido</h1>
-      <p>Hola, soy Pablo Guerra. Bienvenido a mi currículum web, donde podrás conocer mi formación, experiencia, habilidades y proyectos más destacados.</p>
+      <div class="intro-wrap">
+        <div>
+          <h1>Bienvenido</h1>
+          <p>Hola, soy Pablo Guerra. Bienvenido a mi currículum web, donde podrás conocer mi formación, experiencia, habilidades y proyectos más destacados.</p>
+        </div>
+        <div class="profile-photo" aria-label="Espacio para foto de perfil">Foto de Perfil</div>
+      </div>
     </section>
 
     <section id="cv">
       <h2>Currículum Vitae</h2>
+
       <div class="cv-grid">
-        <p><span class="label">Nombre:</span> Pablo Guerra Oliva</p>
-        <p><span class="label">Correo:</span> pabloguerraoliva@gmail.com</p>
-        <p><span class="label">Teléfono:</span> 619136273</p>
-        <p><span class="label">Carnet de conducir:</span> B</p>
-        <p><span class="label">Estudios:</span> ESO</p>
-        <p><span class="label">Experiencia:</span> Instalación de pladur</p>
+        <article class="cv-card">
+          <span class="label">Nombre</span>
+          <p>Pablo Guerra Oliva</p>
+        </article>
+        <article class="cv-card">
+          <span class="label">Correo</span>
+          <p>pabloguerraoliva@gmail.com</p>
+        </article>
+        <article class="cv-card">
+          <span class="label">Teléfono</span>
+          <p>619136273</p>
+        </article>
+        <article class="cv-card">
+          <span class="label">Carnet de conducir</span>
+          <p>B</p>
+        </article>
+        <article class="cv-card">
+          <span class="label">Estudios</span>
+          <p>ESO</p>
+        </article>
+        <article class="cv-card">
+          <span class="label">Experiencia</span>
+          <p>Instalación de pladur</p>
+        </article>
+      </div>
+
+      <div class="skills">
+        <h3>Habilidades</h3>
+        <div class="skill-pills">
+          <span class="pill">Trabajo en equipo</span>
+          <span class="pill">Instalación de pladur</span>
+          <span class="pill">Acabados y montaje</span>
+          <span class="pill">Responsabilidad</span>
+          <span class="pill">Aprendizaje rápido</span>
+        </div>
       </div>
     </section>
 
