@@ -66,11 +66,10 @@
 
     .profile-photo {
       width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 2px solid #2563eb;
+      height: 200px;
+      border-radius: 8px;
+      border: 3px solid var(--line);
       object-fit: cover;
-      object-position: center top;
       display: block;
     }
 
@@ -118,6 +117,7 @@
     @media (max-width: 760px) {
       .header-cv,
       .cv-grid { grid-template-columns: 1fr; }
+      .profile-photo { width: 120px; height: 160px; }
     }
   </style>
 </head>
