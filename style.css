@@ -195,35 +195,37 @@ section { padding: 2rem 1.8rem; }
 }
 
 .contact-wrapper {
-  display: grid;
-  place-items: center;
+  display: block;
   min-height: 60vh;
 }
 
-.contact-grid {
+.contact-content {
+  width: 100%;
+}
+
+.contact-list {
   display: grid;
-  grid-template-columns: repeat(4, minmax(160px, 1fr));
-  gap: 1rem;
-  width: min(100%, 900px);
+  gap: 1.25rem;
+  width: 100%;
 }
 
 .contact-item {
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 1.3rem 1rem;
-  background: #fff;
-  text-align: center;
+  padding: 0.35rem 0;
   display: grid;
-  justify-items: center;
-  align-content: center;
-  gap: 0.55rem;
-  min-height: 155px;
+  grid-template-columns: 40px minmax(0, 1fr);
+  align-items: start;
+  column-gap: 1rem;
 }
 
 .contact-icon {
   width: 40px;
   height: 40px;
   object-fit: contain;
+}
+
+.contact-copy {
+  display: grid;
+  gap: 0.2rem;
 }
 
 .contact-item h3,
@@ -233,13 +235,14 @@ section { padding: 2rem 1.8rem; }
 
 .contact-item h3 {
   color: #111827;
-  font-size: 1.65rem;
-  line-height: 1;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .contact-item p {
-  color: #111827;
-  font-size: 1rem;
+  color: #4b5563;
+  font-size: 0.98rem;
 }
 
 .contact-link {
@@ -259,9 +262,4 @@ section { padding: 2rem 1.8rem; }
   .empresa { text-align: left; }
   .intro-header { grid-template-columns: 1fr; }
   .profile-photo { width: 140px; height: 190px; }
-  .contact-grid { grid-template-columns: repeat(2, minmax(160px, 1fr)); }
-}
-
-@media (max-width: 560px) {
-  .contact-grid { grid-template-columns: 1fr; }
 }
