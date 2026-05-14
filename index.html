@@ -1,11 +1,278 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Mi primera página web</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV · Tu Nombre</title>
+  <style>
+    :root {
+      --bg: #f8f8f8;
+      --surface: #ffffff;
+      --text: #111111;
+      --muted: #666666;
+      --line: #e9e9e9;
+      --accent: #1f1f1f;
+      --max-width: 920px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      width: min(100% - 2rem, var(--max-width));
+      margin: 2.5rem auto;
+      background: var(--surface);
+      border: 1px solid var(--line);
+    }
+
+    header {
+      padding: 2.2rem 2rem 1.8rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.9rem, 3.8vw, 2.6rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      margin-top: 0.35rem;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem 1.2rem;
+      margin-top: 1rem;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+
+    .contact span::before {
+      content: "• ";
+      color: #b3b3b3;
+    }
+
+    .contact span:first-child::before {
+      content: "";
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr;
+      gap: 0;
+    }
+
+    section {
+      padding: 1.6rem 2rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .main-column section:last-child,
+    .side-column section:last-child {
+      border-bottom: 0;
+    }
+
+    .side-column {
+      border-left: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 0.9rem;
+      font-size: 0.83rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0.4rem 0 0;
+      font-size: 0.97rem;
+    }
+
+    .item {
+      margin-bottom: 1rem;
+    }
+
+    .item:last-child {
+      margin-bottom: 0;
+    }
+
+    .item strong {
+      display: block;
+      font-weight: 600;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-top: 0.15rem;
+    }
+
+    ul {
+      margin: 0.5rem 0 0;
+      padding-left: 1rem;
+    }
+
+    li {
+      margin: 0.3rem 0;
+      font-size: 0.94rem;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.5rem;
+    }
+
+    .tag {
+      border: 1px solid var(--line);
+      padding: 0.24rem 0.55rem;
+      font-size: 0.85rem;
+      color: #323232;
+      background: #fcfcfc;
+    }
+
+    footer {
+      padding: 1rem 2rem 1.4rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.83rem;
+      text-align: right;
+    }
+
+    @media (max-width: 800px) {
+      .container {
+        margin: 0;
+        width: 100%;
+        border-left: 0;
+        border-right: 0;
+      }
+
+      main {
+        grid-template-columns: 1fr;
+      }
+
+      .side-column {
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+
+      header,
+      section,
+      footer {
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Hola, esta es mi página web</h1>
-  
+  <div class="container">
+    <header>
+      <h1>Tu Nombre Apellido</h1>
+      <p class="subtitle">Diseñador/a y Desarrollador/a Frontend</p>
+      <div class="contact">
+        <span>ciudad@correo.com</span>
+        <span>+34 600 000 000</span>
+        <span>linkedin.com/in/tuusuario</span>
+        <span>portfolio.com</span>
+      </div>
+    </header>
+
+    <main>
+      <div class="main-column">
+        <section>
+          <h2>Perfil</h2>
+          <p>
+            Profesional con enfoque en diseño limpio, experiencias digitales simples y código mantenible.
+            Me especializo en construir productos web claros, rápidos y centrados en el usuario.
+          </p>
+        </section>
+
+        <section>
+          <h2>Experiencia</h2>
+
+          <article class="item">
+            <strong>Frontend Developer · Empresa A</strong>
+            <p class="meta">2023 — Actualidad · Remoto</p>
+            <ul>
+              <li>Diseñé y desarrollé interfaces modulares con HTML, CSS y JavaScript.</li>
+              <li>Mejoré la consistencia visual del producto con un sistema de componentes.</li>
+              <li>Optimicé tiempos de carga y accesibilidad en páginas clave.</li>
+            </ul>
+          </article>
+
+          <article class="item">
+            <strong>Diseñador/a UX/UI · Estudio B</strong>
+            <p class="meta">2021 — 2023 · Madrid</p>
+            <ul>
+              <li>Convertí requerimientos de negocio en wireframes y prototipos funcionales.</li>
+              <li>Colaboré con equipos de producto para validar decisiones de diseño.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section>
+          <h2>Proyectos</h2>
+          <article class="item">
+            <strong>CV Minimal Template</strong>
+            <p class="meta">HTML + CSS</p>
+            <p>Plantilla base para currículum digital adaptable, enfocada en claridad y lectura.</p>
+          </article>
+        </section>
+      </div>
+
+      <aside class="side-column">
+        <section>
+          <h2>Habilidades</h2>
+          <div class="tag-list">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Responsive</span>
+            <span class="tag">Accesibilidad</span>
+            <span class="tag">Figma</span>
+          </div>
+        </section>
+
+        <section>
+          <h2>Educación</h2>
+          <article class="item">
+            <strong>Grado en Diseño Digital</strong>
+            <p class="meta">Universidad X · 2017 — 2021</p>
+          </article>
+        </section>
+
+        <section>
+          <h2>Idiomas</h2>
+          <article class="item">
+            <p>Español · Nativo</p>
+            <p>Inglés · Profesional</p>
+          </article>
+        </section>
+      </aside>
+    </main>
+
+    <footer>
+      Última actualización: mayo 2026
+    </footer>
+  </div>
 </body>
 </html>
