@@ -20,29 +20,27 @@
       <div>
         <h1 class="section-title">Contacto</h1>
         <hr class="section-divider" />
-        <div class="contact-list">
-          <article class="contact-row">
-            <img class="contact-icon" src="assets/icons/mail.svg" alt="Icono de correo" />
-            <div class="contact-detail">
-              <h3>Correo</h3>
-              <p><a class="contact-link" href="mailto:pabloguerraoliva@gmail.com">pabloguerraoliva@gmail.com</a></p>
-            </div>
-          </article>
-          <article class="contact-row">
-            <img class="contact-icon" src="assets/icons/phone.svg" alt="Icono de teléfono" />
-            <div class="contact-detail">
-              <h3>Teléfono</h3>
-              <p><a class="contact-link" href="tel:+34619136273">619 136 273</a></p>
-            </div>
-          </article>
-          <article class="contact-row">
-            <img class="contact-icon" src="assets/icons/location.svg" alt="Icono de ubicación" />
-            <div class="contact-detail">
-              <h3>Ubicación</h3>
-              <p>Las Palmas de Gran Canaria</p>
-            </div>
-          </article>
-        </div>
+        <form class="contact-form" action="https://formsubmit.co/pabloguerraoliva@gmail.com" method="POST">
+          <input type="hidden" name="_next" value="https://pabloguerraoliva.github.io/index.html" />
+          <input type="hidden" name="_captcha" value="false" />
+
+          <label class="form-field" for="nombre">
+            <span>Nombre</span>
+            <input id="nombre" name="name" type="text" autocomplete="name" required />
+          </label>
+
+          <label class="form-field" for="email">
+            <span>Email</span>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </label>
+
+          <label class="form-field" for="mensaje">
+            <span>Mensaje</span>
+            <textarea id="mensaje" name="message" rows="6" required></textarea>
+          </label>
+
+          <button class="form-submit" type="submit">Enviar mensaje</button>
+        </form>
       </div>
     </section>
   </div>
