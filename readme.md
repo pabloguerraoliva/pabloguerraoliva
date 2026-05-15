@@ -1,6 +1,6 @@
 # 🚀 Mi Portfolio Profesional - Pablo Guerra Oliva
 
-¡Bienvenido a mi repositorio! Aquí se encuentra el código fuente de mi página personal, donde muestro mi trayectoria en el mundo de los Sistemas Microinformáticos y Redes (SMR).
+¡Bienvenido a mi repositorio! Aquí se encuentra el código fuente de mi página personal, donde muestro mi trayectoria.
 
 ## 🌐 Ver Proyecto
 Puedes visitar mi portfolio en vivo aquí:  
