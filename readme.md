@@ -7,7 +7,7 @@ Puedes visitar mi porfolio en vivo aquí:
 [https://pabloguerraoliva.github.io/pabloguerraoliva/](https://pabloguerraoliva.github.io/pabloguerraoliva/)
 
 ## Tecnologías utilizadas
-* **HTML5** - Estructura de la web.
-* **CSS3** - Diseño y maquetación personalizada.
+* **HTML** - Estructura de la web.
+* **CSS** - Diseño y maquetación personalizada.
 * **GitHub Pages** - Hosting y despliegue.
 * **Integración de APIs** - Formulario de contacto dinámico.
