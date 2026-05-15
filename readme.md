@@ -3,8 +3,8 @@
 ¡Bienvenido a mi repositorio! Aquí se encuentra el código fuente de mi página personal, donde muestro mi trayectoria.
 
 ## 🌐 Ver Proyecto
-Puedes visitar mi portfolio en vivo aquí:  
-👉 [Visita mi portfolio aquí](https://pabloguerraoliva.github.io/pabloguerraoliva/){target="_blank"}
+Puedes visitar mi porfolio en vivo aquí:  
+👉 [Visita mi porfolio aquí](https://pabloguerraoliva.github.io/pabloguerraoliva/)
 
 ## 🛠️ Tecnologías utilizadas
 * **HTML5** - Estructura de la web.
