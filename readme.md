@@ -4,7 +4,7 @@
 
 ## Ver Proyecto
 Puedes visitar mi porfolio en vivo aquí:  
-[Visita mi porfolio aquí](https://pabloguerraoliva.github.io/pabloguerraoliva/)
+[https://pabloguerraoliva.github.io/pabloguerraoliva/](https://pabloguerraoliva.github.io/pabloguerraoliva/)
 
 ## Tecnologías utilizadas
 * **HTML5** - Estructura de la web.
