@@ -1,12 +1,12 @@
-# 🚀 Mi Porfolio Profesional - Pablo Guerra Oliva
+#Mi Porfolio Profesional - Pablo Guerra Oliva
 
 ¡Bienvenido a mi repositorio! Aquí se encuentra el código fuente de mi página personal, donde muestro mi trayectoria.
 
-## 🌐 Ver Proyecto
+## Ver Proyecto
 Puedes visitar mi porfolio en vivo aquí:  
-👉 [Visita mi porfolio aquí](https://pabloguerraoliva.github.io/pabloguerraoliva/)
+[Visita mi porfolio aquí](https://pabloguerraoliva.github.io/pabloguerraoliva/)
 
-## 🛠️ Tecnologías utilizadas
+##Tecnologías utilizadas
 * **HTML5** - Estructura de la web.
 * **CSS3** - Diseño y maquetación personalizada.
 * **GitHub Pages** - Hosting y despliegue.
