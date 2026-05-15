@@ -11,9 +11,3 @@ Puedes visitar mi portfolio en vivo aquí:
 * **CSS3** - Diseño y maquetación personalizada.
 * **GitHub Pages** - Hosting y despliegue.
 * **Integración de APIs** - Formulario de contacto dinámico.
-
-## 📈 Sobre mí
-Actualmente cursando **SMR (2025-2027)**. Apasionado por el montaje de equipos, la administración de sistemas y el soporte técnico. Mi objetivo es seguir aprendiendo y aplicando soluciones tecnológicas eficientes.
-
----
-*Si te gusta mi trabajo, ¡siéntete libre de echar un vistazo al código!*
