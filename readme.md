@@ -1,4 +1,4 @@
-# 🚀 Mi Portfolio Profesional - Pablo Guerra Oliva
+# 🚀 Mi Porfolio Profesional - Pablo Guerra Oliva
 
 ¡Bienvenido a mi repositorio! Aquí se encuentra el código fuente de mi página personal, donde muestro mi trayectoria.
 
